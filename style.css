@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(assets/fonts/Norse-Bold.otf) format('opentype');
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+/* Hero Section */
+#hero {
+    width: 40vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Text and Background Img */
+.hero-text {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    top: 12rem;
+    color: white;
+    font-family: Norse, sans-serif;
+    user-select: none;
+    padding: 8px;
+}
+
+.hero-text>p {
+    font-size: 4rem;
+}
+
+.hero-logo-img {
+    width: 80px;
+}
+
+.hero-img-credits {
+    position: absolute;
+    bottom: 1rem;
+    left: 8.75rem;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: lightgray;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: hotpink;
+}
