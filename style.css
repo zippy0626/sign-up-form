@@ -112,6 +112,12 @@ input {
     width: 250px;
     padding: 5px;
     font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px #51506c solid;
+    border-radius: 2px;
 }
 
 form p {
