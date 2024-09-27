@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    --font: "Abel", Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +20,19 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.5;
+    max-width: 75ch;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 body {
     display: flex;
+    font-family: var(--font);
 }
 
 /* Hero Section */
@@ -45,17 +62,13 @@ body {
     font-size: 4rem;
 }
 
-.hero-logo-img {
-    width: 80px;
-}
-
 .hero-img-credits {
     position: absolute;
-    bottom: 1rem;
-    left: 8.75rem;
-    color: white;
+    bottom: 10px;
+    left: 9.75rem;
+    color: whitesmoke;
     font-size: 12px;
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
 }
 
 /* Link Styling */
@@ -72,5 +85,91 @@ a:visited {
 }
 
 a:hover {
+    color: hotpink;
+}
+
+/* Sign Up Section */
+#sign-up {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.sign-up-desc {
+    margin-bottom: 2rem;
+}
+
+.sign-up-desc h1 {
+    font-size: xx-large;
+}
+
+/* Label and Input Styling */
+input {
+    font-family: var(--font);
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form span {
+    color: lightcoral;
+}
+
+/* Password Reqs */
+span.pwd-requirements {
+    color: black;
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+/*  */
+
+form div {
+    display: flex;
+    gap: 3rem;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90px;
+    background-color: #51506c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #3a3948;
+}
+
+/* Existing Account Styling */
+.existing-account {
+    margin-top: 1rem;
+    margin-left: 2px;
+}
+
+.existing-account a:link {
+    color: #51506c;
+    font-weight: 900;
+}
+
+.existing-account a:visited {
+    color: #51506c;
+}
+
+.existing-account a:hover {
     color: hotpink;
 }
